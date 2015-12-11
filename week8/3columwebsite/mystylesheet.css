@@ -16,6 +16,10 @@ header {
 	background-color: #009bc7;
 }
 
+body {
+	max-width: 700px;
+}
+
 .container{
 	color: #7d7d7d;
 	font-size: 14px;

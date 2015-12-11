@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+/* GENERAL STYLING ****************/
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin: 0;
+  padding: 0;
+  background-color: #FAF8F3;
+}
+
+ul, li {
+  list-style: none inside;
+  padding: 0;
+  display: inline;
+}
+
+h1, h2 {
+  line-height: 0.5em;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(250, 248, 242);
+}
+
+.paralinks{
+   color: rgb(174, 167, 150);
+   text-decoration: none;
+}
+
+
+.clear {
+  clear: both;
+  max-height: 0px;
+}
+
+
+/* BANNER ****************/
+
+.banner {
+  background-color: rgb(230, 221, 195);
+}
+
+.bannerImg {
+  float: left;
+  padding: 15px 30px;
+}
+
+.bannerText {
+  float: left;
+  padding-top: 33px;
+  color: rgb(125, 71, 60);
+}
+
+/* NAVIGATION ****************/
+
+nav {
+  background-color: rgb(125, 71, 60);
+  padding: 10px 0px 10px 250px;
+}
+
+nav a {
+  padding: 10px 30px;
+}
+
+nav a:hover {
+  background-color: rgb(105, 51, 40);
+  padding: 10px 30px;
+}
+
+.pageon {
+	background-color: rgb(105, 51, 40);
+	padding: 10px 20px;
+}
+
+/* CONTAINOR ****************/
+
+.containor{
+	display: flex;
+}
+
+.designs {
+	display: flex;
+	justify-content: center;
+}
+
+.galleria{
+	width: 700px; 
+	height: 400px; 
+	background: #000
+}
+
+/* SIDE BAR ****************/
+
+.sidebar {
+  background-color: rgb(174, 167, 150);
+  max-width: 250px;
+  max-height: 1200px;
+  text-align: center;
+  max-height: 100%;
+  color: white;
+  padding: 50px;
+}
+
+.sidebar img {
+  border-radius: 50%;
+  padding: 20px 0;
+}
+
+.sidebar ul {
+  padding: 0;
+  margin: 0;
+}
+
+/* MAIN CONTENT ****************/
+
+.mainContent {
+	background-color: #FAF8F3;
+	padding: 50px;
+	float: right;
+}
+
+.mainContent a {
+	color: rgb(230, 221, 195);
+	text-decoration: underline;
+}
+
+
+@media (max-width: 800px){
+	.containor{
+		display: flex;
+ 		flex-direction: column-reverse;
+	}
+	
+	h1, h2 {
+  		line-height: 0.5em;
+		padding: 5px;
+	}
+	
+	ul, li {
+		padding: 10px;
+		display: block;
+	}
+	
+	nav {
+  		background-color: rgb(125, 71, 60);
+		padding: 3px;
+	}
+
+	nav a {
+ 		 padding: 10px;
+	}
+
+	nav a:hover {
+ 		background-color: rgb(105, 51, 40);
+  		padding: 10px;
+	}
+
+	.pageon {
+		background-color: rgb(105, 51, 40);
+		padding: 5px;
+	}
+	
+	.sidebar {
+ 		background-color: #FAF8F3;
+		position: center;
+ 		text-align: center;
+  		max-height: 100%;
+  		color: rgb(125, 71, 60);
+  		padding: 0px;
+		margin: 0 auto;
+	}
+	
+	mainContent {
+		padding: 0px;
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 500px){
+	h1, h2 {
+  		line-height: 0.5em;
+		padding: 5px;
+		text-align: center;
+	}
+	
+	.bannerImg {
+		float: none;
+  		display: block;
+    	margin-left: auto;
+    	margin-right: auto;
+	}
+}
